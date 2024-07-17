@@ -62,7 +62,7 @@ module.exports = {
         const data = await Flight.findOne({ _id: req.params.id })
 
         res.status(200).send({
-            error: false,
+            error: true,
             data
         })
 
